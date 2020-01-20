@@ -9,7 +9,7 @@ phases:
     commands:
       - echo This is a installation
       - wget -O ~/gradle-4.7-bin.zip https://services.gradle.org/distributions/gradle-4.7-bin.zip
-      - unzip -d /opt/gradle gradle-4.6-all.zip
+      - unzip -d /opt/gradle gradle-4.7-bin.zip
       - mkdir /opt/gradle
       - export PATH=$PATH:/opt/gradle/gradle-4.7/bin
       - touch /etc/profile.d/gradle.sh
