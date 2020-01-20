@@ -5,7 +5,7 @@ phases:
   install:
     run-as: root
     runtime-versions:
-     java:1.8
+      java: corretto8
     commands:
       - echo This is a installation
       - wget https://services.gradle.org/distributions/gradle-4.6-all.zip
@@ -29,4 +29,3 @@ artifacts:
   files:
     - '**/*'
   discard-paths: no
-  
