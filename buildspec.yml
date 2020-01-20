@@ -24,7 +24,6 @@ phases:
       - export PATH=$PATH:/opt/gradle/gradle-4.6/bin
       - whereis gradle
       - /opt/gradle/gradle-4.6/bin/gradle -version
-      - /opt/gradle/gradle-4.6/bin/gradle clean
       - /opt/gradle/gradle-4.6/bin/gradle build
   post_build:
     commands:
