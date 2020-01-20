@@ -1,4 +1,4 @@
-version: 0.1
+version: 0.2
 plaintext:
   JAVA_HOME: "/opt/jdk1.8.0_192"
 phases:
