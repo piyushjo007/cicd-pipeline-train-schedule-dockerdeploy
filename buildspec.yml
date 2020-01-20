@@ -4,6 +4,8 @@ plaintext:
 phases:
   install:
     run-as: root
+    runtime-versions:
+    	java:1.8.0_222-b10
     commands:
       - echo This is a installation
       - wget https://services.gradle.org/distributions/gradle-4.6-all.zip
