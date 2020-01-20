@@ -8,8 +8,13 @@ phases:
       java: corretto8
     commands:
       - echo This is a installation
-      - wget https://services.gradle.org/distributions/gradle-4.6-all.zip
+      - wget -O ~/gradle-4.7-bin.zip https://services.gradle.org/distributions/gradle-4.7-bin.zip
       - unzip -d /opt/gradle gradle-4.6-all.zip
+      - mkdir /opt/gradle
+      - export PATH=$PATH:/opt/gradle/gradle-4.7/bin
+      - touch /etc/profile.d/gradle.sh
+      - chmod 755 /etc/profile.d/gradle.sh
+      - echo "export PATH=$PATH:/opt/gradle/gradle-4.7/bin" >> /etc/profile.d/gradle.sh
   pre_build:
     commands:
       - echo This is a pre build
