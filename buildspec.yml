@@ -13,7 +13,7 @@ phases:
       - export PATH=$PATH:/opt/gradle/gradle-4.6/bin
       - touch /etc/profile.d/gradle.sh
       - chmod 755 /etc/profile.d/gradle.sh
-      - echo "export PATH=$PATH:/opt/gradle/gradle-4.7/bin" >> /etc/profile.d/gradle.sh
+      - echo "export PATH=$PATH:/opt/gradle/gradle-4.6/bin" >> /etc/profile.d/gradle.sh
   pre_build:
     commands:
       - echo This is a pre build
@@ -21,6 +21,7 @@ phases:
     commands:
       - echo Starting build `date`
       - echo Current directory is `pwd`
+      - export PATH=$PATH:/opt/gradle/gradle-4.6/bin
       - whereis gradle
       - which gradle
       - /opt/gradle/gradle-4.6/bin/gradle -version
